@@ -1,0 +1,10 @@
+To enable HorusTracker to startup at boot execute the following commands:
+
+sudo cp /home/pi/HorusTracker/systemd/HorusTracker.service /lib/systemd/system
+sudo chmod 644 /lib/systemd/system/HorusTracker.service
+sudo systemctl daemon-reload
+sudo systemctl enable HorusTracker.service
+sudo reboot
+
+Notes:
+sudo systemctl stop HorusTracker

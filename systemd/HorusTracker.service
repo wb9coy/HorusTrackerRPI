@@ -1,0 +1,10 @@
+[Unit]
+Description=HorusTracker Service
+After=multi-user.target
+
+[Service]
+WorkingDirectory=/home/pi/HorusTracker
+ExecStart=python /home/pi/HorusTracker/HorusTracker.py
+
+[Install]
+WantedBy=multi-user.target
